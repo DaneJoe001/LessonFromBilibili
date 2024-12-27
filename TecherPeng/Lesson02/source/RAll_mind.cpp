@@ -163,7 +163,11 @@ void check_smart_pointer()
         std::cout << "NULL when moved!" << std::endl;
     }
     //初始化时计数器置为1
-    std::shared_ptr<CheckClass>ptr02 = std::make_shared<CheckClass>();
+    //std::shared_ptr<CheckClass>ptr02 = std::make_shared<CheckClass>();
+    //可以使用auto简化书写，auto需要右边的类型信息
+    //故无法单独声明auto变量
+    //类成员也不可以定义为auto
+    auto ptr02 = std::make_shared<CheckClass>();
     //每一次拷贝构造都会使计数器加1
     //当每一次调用析构时，计数器都会减1
     //当计数器为0时，对象才会被销毁

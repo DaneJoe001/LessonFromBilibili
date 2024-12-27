@@ -90,3 +90,12 @@ struct CircleReference
 void func07();
 
 void check_smart_pointer();
+
+//auto可以作为函数返回值
+//函数中所有返回的类型必须一致
+//当没有返回语句是，auto会被推导为void
+//使用auto作为返回值则不能分离定义和实现
+auto func08()
+{
+    return std::make_shared<CheckClass>();
+}
