@@ -1,0 +1,4 @@
+FILE: /home/damnjone/Code/CppCode/LessonFromBilibili/TecherPeng/Lesson06/source/main.cpp
+LINE: 15
+FUNCTION: void check_LOG()
+INFORMATION: Succeeded in writing file!
