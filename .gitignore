@@ -3,4 +3,5 @@
 *.exe
 *.db
 build/
-test.txt
+#test.txt
+test.*
