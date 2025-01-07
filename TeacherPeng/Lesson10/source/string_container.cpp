@@ -129,7 +129,7 @@ void check_string()
     //弱引用不影响原对象，是浅拷贝
     //string_view()是不可写入的
     //string_view()与原字符串共享一片内存(避免了拷贝)
-    std::string_view = std::string_view(str10);
+    std::string_view string_view = std::string_view(str10);
     //remove_prefix(n)和remove_suffix(n)为就地修改，安全欠佳
     //substr()会有拷贝行为，会进行越界检查
 
