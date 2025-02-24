@@ -376,5 +376,4 @@ void thread_with_atomic()
     bool equal = counter.compare_exchange_strong(old, 3);
 
     std::cout << counter << std::endl;
-    return 0;
 }
