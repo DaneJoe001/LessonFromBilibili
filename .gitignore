@@ -3,5 +3,6 @@
 *.exe
 *.db
 build/
-#test.txt
+#test.txt\
+.vs/
 test.*

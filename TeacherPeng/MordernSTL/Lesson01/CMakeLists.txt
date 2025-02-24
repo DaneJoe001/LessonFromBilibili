@@ -3,6 +3,11 @@ cmake_minimum_required(VERSION 3.12)
 #指定项目名称及语言
 project(hellocmake LANGUAGES CXX)
 
+if(MSVC)
+    add_compile_options(/Zc:__cplusplus /permissive-)
+    #set(CMAKE_PREFIX_PATH "D:/Application/Qt6.5/6.5.3/msvc2019_64")
+endif()
+
 #生成静态库
 #add_library(hellolib STATIC hello.cpp)
 
